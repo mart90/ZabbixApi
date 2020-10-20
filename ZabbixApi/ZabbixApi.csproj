@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>Zabbix</PackageId>
+    <PackageId>ZabbixMart</PackageId>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Authors>Henrique Caires</Authors>
     <PackageTags>Zabbix ZabbixApi</PackageTags>
-    <PackageProjectUrl>https://github.com/HenriqueCaires/ZabbixApi</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/mart90/ZabbixApi</PackageProjectUrl>
     <PackageIconUrl>https://www.zabbix.com/favicon.ico</PackageIconUrl>
-    <RepositoryUrl>https://github.com/HenriqueCaires/ZabbixApi</RepositoryUrl>
+    <RepositoryUrl>https://github.com/mart90/ZabbixApi</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
 	<VersionPrefix>4.0.7</VersionPrefix>
 	<VersionSuffix></VersionSuffix>

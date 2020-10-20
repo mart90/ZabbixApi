@@ -36,7 +36,8 @@ namespace ZabbixApi.Services
             @params.AddOrReplace("selectDependencies", includeHelper.WhatShouldInclude(TriggerInclude.Dependencies));
             @params.AddOrReplace("selectDiscoveryRule", includeHelper.WhatShouldInclude(TriggerInclude.DiscoveryRule));
             @params.AddOrReplace("selectLastEvent", includeHelper.WhatShouldInclude(TriggerInclude.LastEvent));
-            
+            @params.AddOrReplace("selectTags", includeHelper.WhatShouldInclude(TriggerInclude.Tags));
+
             @params.AddOrReplace("filter", filter);
             
             return @params;
