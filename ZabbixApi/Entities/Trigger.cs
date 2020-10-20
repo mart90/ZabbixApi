@@ -194,6 +194,8 @@ namespace ZabbixApi.Entities
         /// </summary>
         public IList<Function> functions { get; set; }
 
+        public IList<Tag> tags { get; set; }
+
         /// <summary>
         /// Triggers that the trigger depends
         /// </summary>

@@ -62,6 +62,7 @@ namespace ZabbixApi.Services
         Functions = 512,
         Dependencies = 1024,
         DiscoveryRule = 2048,
-        LastEvent = 4096
+        LastEvent = 4096,
+        Tags = 8192
     }
 }
