@@ -191,7 +191,7 @@ namespace ZabbixApi.Entities
         /// <summary>
         /// ID of the proxy that is used to monitor the host.
         /// </summary>
-        public string proxy_hostid { get; set; }
+        public string proxyid { get; set; }
 
         /// <summary>
         /// (readonly) Availability of SNMP agent. 
@@ -238,6 +238,8 @@ namespace ZabbixApi.Entities
         /// 1 - automatic.
         /// </summary>
         public InventoryMode inventory_mode { get; set; }
+
+        public MonitoredBy monitored_by { get; set; }
 
         #endregion
 
@@ -338,8 +340,8 @@ namespace ZabbixApi.Entities
 
         public enum Status
         {
-            Monitored = 0,
-            Unmonitored = 1
+            Enabled = 0,
+            Disabled = 1
         }
 
         public enum Flags
@@ -394,6 +396,13 @@ namespace ZabbixApi.Entities
             Automatic = 1,
         }
 
+        public enum MonitoredBy
+        {
+            ZabbixServer = 0,
+            Proxy = 1,
+            ProxyGroup = 2,
+        }
+
         #endregion
 
         #region Constructors
@@ -408,8 +417,9 @@ namespace ZabbixApi.Entities
             maintenance_status = MaintenanceStatus.NoMaintenance;
             maintenance_type = MaintenanceType.MaintenanceWithDataCollection;
             snmp_available = SNMPAvailability.Unknown;
-            status = Status.Monitored;
+            status = Status.Enabled;
             inventory_mode = InventoryMode.Disabled;
+            monitored_by = MonitoredBy.ZabbixServer;
         }
 
         #endregion

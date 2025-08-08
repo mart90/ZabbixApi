@@ -20,9 +20,9 @@ namespace ZabbixApi.Entities
         public override string Id { get; set; }
 
         /// <summary>
-        /// (readonly) ID of the proxy.
+        /// Name of the proxy
         /// </summary>
-        public string host { get; set; }
+        public string name { get; set; }
 
         /// <summary>
         /// Type of proxy. 
