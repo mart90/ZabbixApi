@@ -193,6 +193,8 @@ namespace ZabbixApi.Entities
         /// </summary>
         public string proxyid { get; set; }
 
+        public string proxy_groupid { get; set; }
+
         /// <summary>
         /// (readonly) Availability of SNMP agent. 
         /// 
